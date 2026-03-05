@@ -1,18 +1,30 @@
 /* kontejner nebude širší jak 1200px, bude vycentrovaný */
 body > .container {
+    max-width: 1200px;
+    min-width: 600px;
+    justify-content: center;
+
 }
 
 /* obrázky jsou responzivní */
 .img-responsive {
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    margin: 0;
 }
 
 /* panely date a article jsou vedle sebe */
 
 .news-item {
+    display: flex;
 }
-
 /* datum je vystředěno ve čtverci o hraně 116px, mezi měsícem a dnem je "--color-bg-pink" linka, pod dnem je "--category-accent" linka */
 .news-item__date {
+    flex-shrink: 0;
+    text-align: center;
+
 }
 
 .news-item__date-part--month {
